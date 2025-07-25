@@ -54,4 +54,38 @@
 
 # ab hum jo apne app mai urls banaye hai usmai bhi yeh linke likhte hai [from django.urls import path, include] [ from emp_app import views] aur usmai ek urlpatterns [] iski list bana kar usmai apan urls ka path dete hai. apan jo view function banate hai usko apne app wale urls sai map karte hai.
 
-#
+# apne app mai ek url banaye uskai baad uska view function banaye and then maine apne project kai app mai ja kar ek folder banaya templates naam ka aur uskmai ek file banaya html kai index.html ab project ko run kiya tho toh mera app ka url hit ho gya aur uska jo bhi view function tha wo chal gaya.
+
+# itna sab kuch karne kai baad ab hum models.py file mai kaam karenge apna database banayenge. apna sabhi fileld banane kai baad ab hum python manage.py makemigrations yeh command run karne sai hamre app mai ek migration ka file bn jayega python manage.py migrate yeh command run karne sai hamara table bn jayega.
+
+# modal create karne kai baad yeh optionl bhi hoti hai kar bhi skate ho nhi bhi kar skte ho lekin karne sai hum apna data save kar sakte hai admin panal sai bhi. admin.py file mai apna modal register karne sai hum apna data admin interface kai throw data daal sakte hai.
+
+# admin.py file mai apna sabil modal ka class register karna hota hai. ab register karne kai baad hum usko acces karne kai liye super user create karte hai. using command in terminal python manage.py createsuperuser yeh command use karte hai. 
+
+# super create karne kai baad aur usmai jo cradiantial managa hai usko dene kai baad ab apna project run karte hai usmai uskai baad apne url ko open karte hai and then usmai apna cradiantioal dalte hai toh mera djano admin ka dashboard open ho jata hai ab hum apne db mai user interface kie help sai data insert kar sakte hai.
+
+# mera modal ban gya admin panal open ho raha hai aur manuualy data save kar diya hu bahut saare.
+
+# now jo muje display karwana hai apne web page mai uska kaam karna hai templates mai. uskai liye hum use karenge bootstrap 5.1 ka starter templates usko copy karenge and usko index.html wale file mai copy kr denge ab hum container ka use karenge. aur us container mai hie hum PN header footer button ka ue karenge. 
+
+# href="/"  jo button mai yaha / hai iskai wajah si hame ye pta chalta hai kie yeh root folder ko hie target kr raha hai. isko change karene kai liye hame urls.py filemai apne urls ko change karte hai.
+
+# pahle maine urls banaya and then uska view banaya aur uskai baad ush view ka html file banaya templaes folder mai. 
+
+# ab href="/" ismai mai apna urls ka view dai dunga. ab page ko refresh karunga and then usko dekhne par sbhi button aa jayenge aur ush button par click karne par blank page open hoga kyuki ush file mai kuch hai hie nhi.
+
+# {% block content %}{% endblock %} maine DTL ka use kiya pale link par click karne par blank page open hota tha lein ab jo jo index.html page ka view tha wahi sabhi page par kr diya hu click karne par wahi page open hoga. 
+
+# {% extends "index.html" %} {% block content %} <!-- Add Employee form or content here -->{% endblock %} yeh lanagna padta hai sabhi html file mai to extends index.html file.
+
+# ab litna bhi logic hota hai usko hum views.py file mai agate hai. aur jish jish file kie jarurat hogi views.py file mai ush file ko hum import karte hai.
+
+# object.all ka use kiye apne all_emp wale api mai taki sab kuch view ho jaye. yeh jitene bhi values hai wo sb kuch print mai dikh rahi hai ab usko hum frontend par dekhna chahte hai to usko kaise dekhnege.
+
+# ab hum view_all_emp.html wale file mai hum apna pura html ka code likhenge jo hame dikhana hoga apne UI mai uska loop likenge aur table banayege aur table hum uska class likhenge table ka format acca dikhne kai liye.ab jitna bhi db mai data hai wo dikhne lagega
+
+# ab hum add_emp.html wale file ko dekhnege aur usmai apna UI banayege aur iska use karenge  <form action="/add_emp" method="post"> aur  {% csrf_token %} iska use karenge. uskai baad hum views.py file mai apna logic likhenge. yeh wala kaam bhi ho gya jyada toush nhi tha yeh concept this is easy.
+
+# remove_emp ab hum ish template par kaam akrenge yeh kaam karega emp_id kai behalf par. yeh bhi ban gya remove employee wala bhi id kie help sai.
+
+# filter_emp.html ab hum ish module par kaam karege.

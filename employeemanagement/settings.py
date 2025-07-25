@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'emp_app',  # Custom app for employee management
+    "emp_app", 
 ]
 
 MIDDLEWARE = [
